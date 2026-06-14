@@ -6,7 +6,7 @@ $(shell pkg-config --cflags sdl3)
 
 LDFLAGS=$(shell pkg-config --libs sdl3)
 
-SRC=src/main.c src/game.c src/paddle.c src/ball.c
+SRC=src/main.c src/game.c src/paddle.c src/ball.c src/collision.c
 
 TARGET=pong
 

@@ -14,7 +14,12 @@ typedef struct Game
     bool running;
 
     Paddle player;
+    Paddle cpu;
+
     Ball ball;
+
+    int player_score;
+    int cpu_score;
 } Game;
 
 bool Game_Init(Game *game);

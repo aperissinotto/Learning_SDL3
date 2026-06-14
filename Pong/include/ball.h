@@ -24,4 +24,9 @@ void Ball_Render(
     SDL_Renderer *renderer
 );
 
+void Ball_Reset(
+    Ball *ball,
+    float direction
+);
+
 #endif

@@ -1,4 +1,5 @@
 #include "paddle.h"
+#include "constants.h"
 
 void Paddle_Init(
     Paddle *paddle,
@@ -46,4 +47,20 @@ void Paddle_Update(
         direction *
         paddle->speed *
         delta_time;
+
+    if (paddle->rect.y < 0)
+    {
+        paddle->rect.y = 0;
+    }
+
+    if (
+        paddle->rect.y +
+        paddle->rect.h >
+        WINDOW_HEIGHT
+    )
+    {
+        paddle->rect.y =
+            WINDOW_HEIGHT -
+            paddle->rect.h;
+    }
 }

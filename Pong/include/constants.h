@@ -8,7 +8,7 @@
 
 #define BALL_SIZE 20
 
-#define BALL_SPEED_X 300.0f
+#define BALL_SPEED_X -300.0f
 #define BALL_SPEED_Y 200.0f
 
 #endif
